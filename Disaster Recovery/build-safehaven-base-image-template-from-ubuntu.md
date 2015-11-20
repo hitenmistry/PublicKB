@@ -26,7 +26,7 @@ This document covers the creation of a SafeHaven 3.0/3.1 base image. This base i
 
       You may see that there grub has been updated as there are no more linux entries, in which case you must install the .44 image.
 
-      Run: `apt-get install linux-image-3.13.0-44-generic linux-header-3.13.0-44-generic -y` and once that is complete, run `update-grub`. Reboot the machine and check that `uname -r` returns
+      Run: `apt-get install linux-image-3.13.0-44-generic linux-headers-3.13.0-44-generic -y` and once that is complete, run `update-grub`. Reboot the machine and check that `uname -r` returns
       3.13.0-44 as the current kernel. Note that iSCSI servers are tied to the kernel so if you forget to do this step, you will need to rebuild iSCSI after downgrading the kernel.
 
   3. Download the "base installers" package
